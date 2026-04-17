@@ -28,20 +28,49 @@ body {
 
 /* NAV */
 nav {
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid var(--border);
-  padding: 16px 0;
+  padding: 14px 0;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 nav .container { display: flex; align-items: center; justify-content: space-between; }
 .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.nav-logo img { width: 36px; height: 36px; border-radius: 8px; }
-.nav-logo span { font-weight: 700; font-size: 20px; color: var(--primary); }
-.nav-links { display: flex; gap: 24px; align-items: center; }
-.nav-links a { text-decoration: none; color: var(--text-muted); font-size: 14px; font-weight: 500; transition: color 0.2s; }
-.nav-links a:hover { color: var(--primary); }
+.nav-logo img { width: 32px; height: 32px; border-radius: 8px; }
+.nav-logo span { font-weight: 700; font-size: 18px; color: var(--primary); letter-spacing: -0.02em; }
+.nav-links { display: flex; gap: 32px; align-items: center; }
+.nav-links a:not(.btn) {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s;
+  position: relative;
+}
+.nav-links a:not(.btn):hover { color: var(--primary); }
+.nav-links a:not(.btn)::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.2s;
+}
+.nav-links a:not(.btn):hover::after { width: 100%; }
+.nav-links .btn {
+  padding: 9px 18px !important;
+  font-size: 13px !important;
+  color: white !important;
+  box-shadow: 0 2px 8px rgba(29,158,117,0.25);
+}
+.nav-links .btn:hover {
+  box-shadow: 0 4px 12px rgba(29,158,117,0.35);
+}
 
 /* HERO */
 .hero {
