@@ -317,6 +317,7 @@ footer a:hover { text-decoration: underline; }
 .notice { max-width: 860px; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--primary); border-radius: 12px; padding: 24px 28px; }
 .notice h3 { font-size: 16px; margin-bottom: 8px; }
 .notice p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+.notice p + p { margin-top: 10px; }
 .social-proof .stats-grid { margin-bottom: 40px; }
 
 /* PRICING NOTE */
