@@ -151,6 +151,10 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 .feature-card:nth-child(4) .feature-icon { background: #FCE7F3; color: #EC4899; }
 .feature-card:nth-child(5) .feature-icon { background: #E0E7FF; color: #6366F1; }
 .feature-card:nth-child(6) .feature-icon { background: #D1FAE5; color: #10B981; }
+.feature-card:nth-child(7) .feature-icon { background: #FFEDD5; color: #F97316; }
+.feature-card:nth-child(8) .feature-icon { background: #DBEAFE; color: #3B82F6; }
+.feature-card:nth-child(9) .feature-icon { background: #E8F5EF; color: #1D9E75; }
+.premium-tag { display: inline-block; margin-left: 6px; padding: 2px 8px; border-radius: 999px; background: var(--primary-light); color: var(--primary); font-size: 11px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; vertical-align: middle; }
 
 /* HERO TRUST */
 .hero-trust {
