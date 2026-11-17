@@ -155,6 +155,10 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 .feature-card:nth-child(8) .feature-icon { background: #DBEAFE; color: #3B82F6; }
 .feature-card:nth-child(9) .feature-icon { background: #E8F5EF; color: #1D9E75; }
 .premium-tag { display: inline-block; margin-left: 6px; padding: 2px 8px; border-radius: 999px; background: var(--primary-light); color: var(--primary); font-size: 11px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; vertical-align: middle; }
+/* What Premium adds to a part of the app, said at the foot of its card */
+.feature-card p + p { margin-top: 12px; }
+.feature-card .plus { font-size: 13px; }
+.plus .premium-tag { margin-left: 0; margin-right: 4px; }
 
 /* HERO TRUST */
 .hero-trust {
@@ -316,12 +320,17 @@ footer a:hover { text-decoration: underline; }
 .family-card ul { list-style: none; }
 .family-card li { position: relative; padding: 5px 0 5px 22px; font-size: 14px; color: var(--text-muted); line-height: 1.5; }
 .family-card li::before { content: "\2713"; position: absolute; left: 0; color: var(--primary); font-weight: 700; }
+.family-grid:last-child { margin-bottom: 0; }
+/* Two sections of this kind in a row: the second one sits on the ground of the page */
+.family.plain { background: transparent; border-top: 0; border-bottom: 0; }
+.family.plain .family-card { background: var(--surface); }
 
 /* NOTICE */
 .notice { max-width: 860px; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--primary); border-radius: 12px; padding: 24px 28px; }
 .notice h3 { font-size: 16px; margin-bottom: 8px; }
 .notice p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
 .notice p + p { margin-top: 10px; }
+.notice + .notice { margin-top: 16px; }
 .social-proof .stats-grid { margin-bottom: 40px; }
 
 /* PRICING NOTE */
@@ -339,6 +348,10 @@ footer a:hover { text-decoration: underline; }
 .faq details[open] summary::after { content: "\2212"; }
 .faq details p { padding: 0 0 18px; font-size: 14px; color: var(--text-muted); line-height: 1.6; }
 .faq a { color: var(--primary-dark); }
+/* The last word of the page */
+.closing { text-align: center; margin-top: 48px; }
+.closing p { font-size: 20px; font-weight: 600; margin-bottom: 16px; }
+.faq .closing a { color: white; }
 
 /* Keyboard focus is always visible */
 a:focus-visible, summary:focus-visible, .btn:focus-visible { outline: 3px solid rgba(29,158,117,0.45); outline-offset: 2px; border-radius: 8px; }
