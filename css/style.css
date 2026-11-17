@@ -171,20 +171,19 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
   gap: 10px;
   box-shadow: var(--shadow-sm);
 }
-/* The initial of each one in a round, as the people of the house are drawn in the app */
-.target-pill b {
+/* Each one of the house with its face in a round */
+.target-pill span {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background: var(--primary-light);
-  color: var(--primary-dark);
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 17px;
+  line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
-.target-pill:nth-child(even) b { background: var(--accent-light); color: var(--accent); }
+.target-pill:nth-child(even) span { background: var(--accent-light); }
 
 /* WHAT IT DOES NOT DO */
 .social-proof { padding: 60px 0; background: var(--surface-alt); }
