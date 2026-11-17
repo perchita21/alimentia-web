@@ -36,7 +36,7 @@
         <li><strong>Perfil y salud:</strong> qué tipo de persona eres (adulto, embarazada, persona mayor), la edad de los niños, las alergias e intolerancias (la celiaquía entre ellas), si no comes carne ni pescado o nada de origen animal, y si quieres menos o más calorías de las recomendadas. Solo si eliges que la app calcule tus calorías con tus datos: sexo, edad, peso, altura, nivel de actividad y objetivo. Las cuentas creadas antes del 17 de noviembre de 2026 conservan además lo que entonces se pedía (pasos diarios, enfermedades indicadas y, si se usó, el resultado del análisis corporal) hasta que edites el perfil o elimines la cuenta.</li>
         <li><strong>Personas de tu grupo:</strong> el nombre que les pongas y sus datos de perfil, cuando añades a las personas de tu casa. Añade solo a personas que te hayan dado permiso, o a menores a tu cargo.</li>
         <li><strong>Uso de la app:</strong> menús, semanas guardadas, las recetas que escribas o traigas a tu recetario, recetas que te gustan o no, despensa, lista de la compra y registro de comidas. Si añades el menú del comedor escolar, los platos de cada día (no el nombre del colegio ni de los niños).</li>
-        <li><strong>Fotos:</strong> la foto de un plato, la del menú del comedor escolar o la de una receta que quieras traer a tu recetario. Se usan para ese análisis y no las guardamos; solo conservamos el resultado. Las versiones anteriores de la app permitían además analizar una foto corporal: la versión actual ya no lo ofrece.</li>
+        <li><strong>Fotos:</strong> la foto de un plato, la del menú del comedor escolar o la de una receta que quieras traer a tu recetario. Se usan para ese análisis y no las guardamos; solo conservamos el resultado. La foto que añadas a una receta de tu recetario es distinta: esa sí se guarda con tu cuenta, para que la veas en tu recetario. Solo la ves tú, y se borra si la quitas, si borras la receta o si eliminas la cuenta. Las versiones anteriores de la app permitían además analizar una foto corporal: la versión actual ya no lo ofrece.</li>
         <li><strong>Suscripción:</strong> si tienes Premium, su estado y fecha de caducidad. Nunca los datos de tu tarjeta.</li>
         <li><strong>Estadísticas y errores (opcional):</strong> solo si lo activas, contadores de uso (qué funciones se usan y qué días) y avisos de errores (el texto del error y la versión de la app). No incluyen datos de salud.</li>
       </ul>
@@ -62,6 +62,7 @@
       <ul>
         <li>En <strong>tu teléfono</strong>, para que la app funcione sin conexión.</li>
         <li>En <strong>Firebase (Google Cloud)</strong>, en una base de datos alojada en la Unión Europea.</li>
+        <li>Las fotos de tus recetas, en el almacenamiento de archivos de Firebase (Google Cloud).</li>
         <li>Las funciones con IA y la comprobación de la suscripción pasan por servidores de Google en Estados Unidos, y algunos proveedores (Anthropic, RevenueCat) están en Estados Unidos. Esos envíos se hacen con las garantías que exige el RGPD para transferencias internacionales.</li>
       </ul>
       <p>Todas las comunicaciones van cifradas. Cada usuario solo puede acceder a sus propios datos.</p>
@@ -71,7 +72,7 @@
       <div class="table-wrap">
       <table>
         <tr><th>Proveedor</th><th>Para qué</th></tr>
-        <tr><td>Google (Firebase)</td><td>Cuentas, base de datos y servidores de la app</td></tr>
+        <tr><td>Google (Firebase)</td><td>Cuentas, base de datos, fotos de tus recetas y servidores de la app</td></tr>
         <tr><td>Google Play</td><td>Cobro y gestión de la suscripción</td></tr>
         <tr><td>RevenueCat</td><td>Comprobar si la suscripción está activa</td></tr>
         <tr><td>Anthropic</td><td>Funciones con inteligencia artificial</td></tr>
@@ -88,7 +89,7 @@
       <ul>
         <li>Mientras tengas la cuenta.</li>
         <li>El registro de comidas conserva los últimos 30 días.</li>
-        <li>Si eliminas la cuenta, se borran en ese momento tu perfil, menús, registros, grupo, tu recetario, recetas favoritas, el registro de tu consentimiento, los avisos de errores y tu ficha en RevenueCat.</li>
+        <li>Si eliminas la cuenta, se borran en ese momento tu perfil, menús, registros, grupo, tu recetario con sus fotos, recetas favoritas, el registro de tu consentimiento, los avisos de errores y tu ficha en RevenueCat.</li>
         <li>Google Play conserva el historial de tus compras según sus propias normas.</li>
       </ul>
       <p>Cómo hacerlo: <a href="eliminar-cuenta.html">eliminar la cuenta y los datos</a>.</p>
