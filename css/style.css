@@ -244,12 +244,25 @@ nav .container { display: flex; align-items: center; justify-content: space-betw
 .about-card h3 { font-size: 18px; margin-bottom: 6px; }
 .about-card p { font-size: 15px; color: var(--text-muted); line-height: 1.6; }
 .about-card a { color: var(--primary-dark); font-weight: 700; }
+.about-card + .about-card { margin-top: 16px; }
+.about-photo { flex: none; width: 64px; height: 64px; border-radius: 50%; object-fit: cover; box-shadow: var(--shadow-sm); }
+
+/* SOCIAL ACCOUNTS: pills with their name in Tupi's card, round icons in the footer of every page */
+.social-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.social-links a { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 8px 16px; border-radius: 999px; background: var(--primary-light); color: var(--primary-dark); font-size: 14px; font-weight: 800; text-decoration: none; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.social-links a:hover { transform: translateY(-1px); box-shadow: var(--shadow-sm); }
+.social-links svg, .footer-social svg { flex: none; width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.social-links a:focus-visible, .footer-social a:focus-visible { border-radius: 999px; }
 
 /* FOOTER */
 footer { padding: 40px 0; text-align: center; color: var(--text-muted); font-size: 14px; }
 footer a { color: var(--primary-dark); font-weight: 700; text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 .footer-links { display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; }
+.footer-social { display: flex; justify-content: center; gap: 12px; margin-bottom: 18px; }
+.footer-social a { width: 44px; height: 44px; border-radius: 50%; background: var(--surface); box-shadow: var(--shadow-sm); display: inline-flex; align-items: center; justify-content: center; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.footer-social a:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); text-decoration: none; }
+.footer-social svg { width: 20px; height: 20px; }
 
 /* LEGAL PAGES */
 .legal { padding: 60px 0; max-width: 800px; margin: 0 auto; }
